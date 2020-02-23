@@ -15,8 +15,8 @@ class CreateWodsTable extends Migration
     {
         Schema::create('wods', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->text('content');
+            $table->string('type');
+            $table->longText('content');
             $table->timestamps();
             $table->timestamp('published_at')->nullable();
         });
