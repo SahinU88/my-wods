@@ -43,5 +43,69 @@ class WodsTableSeeder extends Seeder
             'updated_at' => new DateTime('now'),
             'published_at' => new DateTime('now'),
         ]);
+
+        DB::table('wods')->insert([
+            'type' => 'EMOM',
+            'content' => 'EMOM 30min' . PHP_EOL . '45sec row' . PHP_EOL . '45sec burpees' . PHP_EOL . '45sec bike',
+            'created_at' => new DateTime('now'),
+            'updated_at' => new DateTime('now'),
+            'published_at' => new DateTime('now'),
+        ]);
+
+        DB::table('wods')->insert([
+            'type' => 'RFT',
+            'content' => '5 RFT' . PHP_EOL . '100x DUs' . PHP_EOL . '30 Burpee box jump overs @24"',
+            'created_at' => new DateTime('now'),
+            'updated_at' => new DateTime('now'),
+            'published_at' => new DateTime('now'),
+        ]);
+
+        DB::table('wods')->insert([
+            'type' => 'RFT',
+            'content' => '5 RFT' . PHP_EOL . '100x DUs' . PHP_EOL . '30 Burpee box jump overs @24"',
+            'created_at' => new DateTime('now'),
+            'updated_at' => new DateTime('now'),
+            'published_at' => new DateTime('now'),
+        ]);
+
+        DB::table('wods')->insert([
+            'type' => 'Chipper',
+            'content' => '30 DUs before each set' . PHP_EOL . '10-8-6-4-2 Cleans' . PHP_EOL . 'with increasing weight' . PHP_EOL . '(70-75-80-85-92.5kg)',
+            'created_at' => new DateTime('now'),
+            'updated_at' => new DateTime('now'),
+            'published_at' => new DateTime('now'),
+        ]);
+
+        DB::table('wods')->insert([
+            'type' => 'Freestyle',
+            'content' => 'Warm-Up to 1RM Power Clean' . PHP_EOL . 'Then go for 3 rounds' . PHP_EOL . '3x 3 Power Cleans + 3 FSQ @70%' . PHP_EOL . '3x 3 Power Cleans + 3 FSQ @73%' . PHP_EOL . '3x 3 Power Cleans + 3 FSQ @75%',
+            'created_at' => new DateTime('now'),
+            'updated_at' => new DateTime('now'),
+            'published_at' => new DateTime('now'),
+        ]);
+
+        DB::table('wods')->insert([
+            'type' => 'Freestyle',
+            'content' => 'Warm-Up to 1RM complex of' . PHP_EOL . 'Clean' . PHP_EOL . 'Hang Clean' . PHP_EOL . 'Front Squat',
+            'created_at' => new DateTime('now'),
+            'updated_at' => new DateTime('now'),
+            'published_at' => new DateTime('now'),
+        ]);
+
+        DB::table('wods')->insert([
+            'type' => 'EMOM',
+            'content' => 'EMOM every 2min' . PHP_EOL . '3x Front Squats at your 1RM',
+            'created_at' => new DateTime('now'),
+            'updated_at' => new DateTime('now'),
+            'published_at' => new DateTime('now'),
+        ]);
+
+        DB::table('wods')->insert([
+            'type' => 'FUFU',
+            'content' => '2 Rounds' . PHP_EOL . '30 DB HIP Thrusts' . PHP_EOL . '25 DB Deep Trains' . PHP_EOL . '30 DB Arnold Press' . PHP_EOL . '50 DB Russian Twists',
+            'created_at' => new DateTime('now'),
+            'updated_at' => new DateTime('now'),
+            'published_at' => new DateTime('now'),
+        ]);
     }
 }

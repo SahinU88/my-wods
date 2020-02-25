@@ -10,6 +10,8 @@ module.exports = {
             chipper: colors.teal,
             ladder: colors.green,
             tabata: colors.yellow,
+            freestyle: colors.orange,
+            fufu: colors.red,
         }
     }
   },
