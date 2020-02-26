@@ -9,6 +9,6 @@ class WodController extends Controller
 {
     public function index()
     {
-        return Wod::all();
+        return Wod::all()->shuffle();
     }
 }
