@@ -21,7 +21,7 @@ class WodsTableSeeder extends Seeder
         ]);
 
         DB::table('wods')->insert([
-            'type' => 'Chipper',
+            'type' => 'Couplet',
             'content' => '21-15-9' . PHP_EOL . 'HSPU' . PHP_EOL . 'T2B',
             'created_at' => new DateTime('now'),
             'updated_at' => new DateTime('now'),
@@ -61,7 +61,7 @@ class WodsTableSeeder extends Seeder
         ]);
 
         DB::table('wods')->insert([
-            'type' => 'Chipper',
+            'type' => 'Couplet',
             'content' => '30 DUs before each set' . PHP_EOL . '10-8-6-4-2 Cleans' . PHP_EOL . 'with increasing weight' . PHP_EOL . '(70-75-80-85-92.5kg)',
             'created_at' => new DateTime('now'),
             'updated_at' => new DateTime('now'),
@@ -119,6 +119,14 @@ class WodsTableSeeder extends Seeder
         DB::table('wods')->insert([
             'type' => 'AMRAP',
             'content' => '12min AMRAP' . PHP_EOL . '12 cal row' . PHP_EOL . '10 GHD' . PHP_EOL . '8 Box jumps' . PHP_EOL . '6 HSPU',
+            'created_at' => new DateTime('now'),
+            'updated_at' => new DateTime('now'),
+            'published_at' => new DateTime('now'),
+        ]);
+
+        DB::table('wods')->insert([
+            'type' => 'TABATA',
+            'content' => '3 Rounds, 20" on - 10" off' . PHP_EOL . 'Russian Twists' . PHP_EOL . 'V-Ups' . PHP_EOL . 'Plank hold' . PHP_EOL . 'Air Squats',
             'created_at' => new DateTime('now'),
             'updated_at' => new DateTime('now'),
             'published_at' => new DateTime('now'),

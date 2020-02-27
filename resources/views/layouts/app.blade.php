@@ -16,7 +16,7 @@
 
         @include('partials.header')
 
-        <div id="app" class="container mx-auto md:-mt-40 lg:-mt-48 xl:-mt-64 pb-8">
+        <div id="app" class="container mx-auto md:-mt-48 lg:-mt-56 xl:-mt-64 pb-8">
             @yield('content')
         </div>
 

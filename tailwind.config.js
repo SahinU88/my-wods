@@ -7,7 +7,7 @@ module.exports = {
             emom: colors.purple,
             amrap: colors.indigo,
             rft: colors.blue,
-            chipper: colors.teal,
+            couplet: colors.teal,
             ladder: colors.green,
             tabata: colors.yellow,
             freestyle: colors.orange,

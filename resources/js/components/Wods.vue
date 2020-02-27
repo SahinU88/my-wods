@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">
-            <div v-for="wod in wods" :key="wod.id"
+            <div v-for="wod in wods" :key="wod.id" v-show="showWod(wod.type)"
                 :class="'bg-'+wod.type.toLowerCase()+'-500'"
                 class="flex-shrink-0 m-6 relative overflow-hidden rounded-lg shadow-lg">
                 <svg class="absolute bottom-0 left-0 mb-8" viewBox="0 0 375 283" fill="none" style="transform: scale(1.5); opacity: 0.1;">
@@ -22,6 +22,7 @@
 </template>
 
 <script>
+import { EventBus } from './../event-bus.js';
 import axios from 'axios';
 
 export default {
@@ -30,10 +31,12 @@ export default {
             loading: false,
             wods: null,
             error: null,
+            currentWodType: 'all'
         };
     },
     created() {
         this.fetchData();
+        this.filterListener();
     },
     methods: {
         fetchData() {
@@ -46,6 +49,14 @@ export default {
                     this.wods = response.data;
                     this.loading = false;
                 });
+        },
+        filterListener() {
+            EventBus.$on('wodsFiltered', (data) => {
+                this.currentWodType = data;
+            });
+        },
+        showWod(type) {
+            return this.currentWodType === 'all' || type.toLowerCase() == this.currentWodType;
         }
     }
 }
