@@ -61,14 +61,6 @@ class WodsTableSeeder extends Seeder
         ]);
 
         DB::table('wods')->insert([
-            'type' => 'RFT',
-            'content' => '5 RFT' . PHP_EOL . '100x DUs' . PHP_EOL . '30 Burpee box jump overs @24"',
-            'created_at' => new DateTime('now'),
-            'updated_at' => new DateTime('now'),
-            'published_at' => new DateTime('now'),
-        ]);
-
-        DB::table('wods')->insert([
             'type' => 'Chipper',
             'content' => '30 DUs before each set' . PHP_EOL . '10-8-6-4-2 Cleans' . PHP_EOL . 'with increasing weight' . PHP_EOL . '(70-75-80-85-92.5kg)',
             'created_at' => new DateTime('now'),
