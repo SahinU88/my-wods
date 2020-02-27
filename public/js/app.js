@@ -2499,7 +2499,7 @@ var render = function() {
                   "div",
                   {
                     staticClass:
-                      "font-bold text-gray-200 leading-normal uppercase whitespace-pre"
+                      "font-bold text-gray-200 leading-normal uppercase whitespace-pre-line"
                   },
                   [_vm._v(_vm._s(wod.content))]
                 )

@@ -9,7 +9,7 @@
                     <rect y="107.48" width="152" height="152" rx="8" transform="rotate(-45 0 107.48)" fill="white"/>
                 </svg>
                 <div class="relative pt-6 px-6 flex h-48 overflow-hidden">
-                    <div class="font-bold text-gray-200 leading-normal uppercase whitespace-pre">{{ wod.content }}</div>
+                    <div class="font-bold text-gray-200 leading-normal uppercase whitespace-pre-line">{{ wod.content }}</div>
                 </div>
                 <div class="relative text-gray-100 px-6 pb-6 mt-6">
                     <div class="flex justify-between">

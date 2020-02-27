@@ -107,5 +107,29 @@ class WodsTableSeeder extends Seeder
             'updated_at' => new DateTime('now'),
             'published_at' => new DateTime('now'),
         ]);
+
+        DB::table('wods')->insert([
+            'type' => 'Freestyle',
+            'content' => 'Every 2min' . PHP_EOL . '5x3 Snatch Balance',
+            'created_at' => new DateTime('now'),
+            'updated_at' => new DateTime('now'),
+            'published_at' => new DateTime('now'),
+        ]);
+
+        DB::table('wods')->insert([
+            'type' => 'EMOM',
+            'content' => '10min EMOM' . PHP_EOL . '1 Snatch + 1 Overhead Squat @80-85 of 1RM',
+            'created_at' => new DateTime('now'),
+            'updated_at' => new DateTime('now'),
+            'published_at' => new DateTime('now'),
+        ]);
+
+        DB::table('wods')->insert([
+            'type' => 'AMRAP',
+            'content' => '12min AMRAP' . PHP_EOL . '12 cal row' . PHP_EOL . '10 GHD' . PHP_EOL . '8 Box jumps' . PHP_EOL . '6 HSPU',
+            'created_at' => new DateTime('now'),
+            'updated_at' => new DateTime('now'),
+            'published_at' => new DateTime('now'),
+        ]);
     }
 }
