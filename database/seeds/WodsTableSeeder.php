@@ -131,5 +131,37 @@ class WodsTableSeeder extends Seeder
             'updated_at' => new DateTime('now'),
             'published_at' => new DateTime('now'),
         ]);
+
+        DB::table('wods')->insert([
+            'type' => 'LADDER',
+            'content' => '10-9-8-7-6-5-4-3-2-1' . PHP_EOL . 'Bench Press' . PHP_EOL . 'S2OH' . PHP_EOL . 'Push Ups',
+            'created_at' => new DateTime('now'),
+            'updated_at' => new DateTime('now'),
+            'published_at' => new DateTime('now'),
+        ]);
+
+        DB::table('wods')->insert([
+            'type' => 'EMOM',
+            'content' => 'EMOM 12min' . PHP_EOL . 'Box Jumps' . PHP_EOL . 'GHD' . PHP_EOL . 'D-Ball Cleans',
+            'created_at' => new DateTime('now'),
+            'updated_at' => new DateTime('now'),
+            'published_at' => new DateTime('now'),
+        ]);
+
+        DB::table('wods')->insert([
+            'type' => 'RFT',
+            'content' => '10 Rounds for time' . PHP_EOL . '8 cal AAB' . PHP_EOL . '8 DB Snatches' . PHP_EOL . '8 Devil Press'. PHP_EOL . '8 Wall Balls',
+            'created_at' => new DateTime('now'),
+            'updated_at' => new DateTime('now'),
+            'published_at' => new DateTime('now'),
+        ]);
+
+        DB::table('wods')->insert([
+            'type' => 'RFT',
+            'content' => '5 Rounds for time' . PHP_EOL . '6 Front Rack Lunges' . PHP_EOL . '60 DUs' . PHP_EOL . '6 T2B'. PHP_EOL . '60 DUs',
+            'created_at' => new DateTime('now'),
+            'updated_at' => new DateTime('now'),
+            'published_at' => new DateTime('now'),
+        ]);
     }
 }
