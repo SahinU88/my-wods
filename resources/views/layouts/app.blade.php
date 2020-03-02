@@ -10,7 +10,6 @@
 
         <title>{{ config('app.name', 'Laravel') }}</title>
         <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-        <link href="{{ mix('js/app.js') }}" rel="preload" as="script">
     </head>
     <body class="h-screen antialiased leading-none">
 
