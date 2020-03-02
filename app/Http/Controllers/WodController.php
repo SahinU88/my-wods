@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Wod;
-use Illuminate\Http\Request;
 
 class WodController extends Controller
 {

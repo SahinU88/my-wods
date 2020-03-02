@@ -4,7 +4,7 @@
             <h1
                 class="font-bold text-white text-xl sm:text-2xl md:text-5xl leading-tight mb-6"
             >
-                {{ config('app.name', 'Laravel') }}
+                <a href="/">{{ config('app.name', 'Laravel') }}</a>
             </h1>
             <p class="text-gray-400 md:text-xl md:px-18">Looking for a WOD? Find one here.</p>
         </div>
