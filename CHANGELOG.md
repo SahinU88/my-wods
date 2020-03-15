@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.1.2] - 15.03.2020
+
+### Changed
+
+- gitignore to remove not neede public resources
+
 ## [v0.1.1] - 15.03.2020
 
 ### Added
@@ -12,6 +18,7 @@
 
 - logo & favicon
 
+[v0.1.2]: https://github.com/SahinU88/my-wods/tree/v0.1.2/
 [v0.1.1]: https://github.com/SahinU88/my-wods/tree/v0.1.1/
 [v0.1.0]: https://github.com/SahinU88/my-wods/tree/v0.1.0/
 [unreleased]: https://github.com/SahinU88/my-wods/blob/develop/
