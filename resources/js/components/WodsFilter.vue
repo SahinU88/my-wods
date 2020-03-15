@@ -1,6 +1,6 @@
 <template>
     <div class="grid grid-cols-1">
-        <div class="sm:w-1/2 md:w-1/4 mx-6 sm:mx-auto my-4">
+        <div class="sm:w-1/2 md:w-1/4 mx-6 sm:mx-auto mt-4 mb-8">
             <label class="block uppercase tracking-wide text-gray-500 text-xs font-bold mb-2 text-center" for="grid-state">WOD Type</label>
             <div class="relative">
                 <select :v-model="currentWodType" @change="broadcastFilter($event)" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 uppercase" id="grid-state">

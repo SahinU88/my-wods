@@ -19,6 +19,7 @@ mix.js('resources/js/app.js', 'public/js')
    .tailwind('./tailwind.config.js');
 
 mix.copyDirectory('resources/images', 'public/images');
+mix.copyDirectory('resources/favicon', 'public/favicon');
 
 if (mix.inProduction()) {
   mix
